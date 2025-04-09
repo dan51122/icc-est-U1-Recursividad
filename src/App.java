@@ -1,12 +1,19 @@
 public class App {
     public static void main(String[] args) throws Exception {
-
-        int n = 5;
+        /*int n = 5;
         int resultadoFinal = factorial(n);
-        System.out.println("Resultado: " + resultadoFinal);
+        System.out.println("Resultado: " + resultadoFinal);    
+        */
+        EjerciciosRecursivos eR = new EjerciciosRecursivos();
+        int resultado;
+        resultado=eR.fibonacci(5);
+        System.out.println(resultado);
 
-    }
-
+        int resultado1;
+        resultado1=eR.sumaConsecutivos(5);
+        System.out.println(resultado1);
+    }   
+    /*
     public static int factorial(int n) {
         if (n == 0) {
             System.out.println("Alcance el caso base");
@@ -15,5 +22,5 @@ public class App {
         int resultado = n * factorial(n - 1);
         System.out.println("Calculando factorial de " + n + "* factorias(" + (n - 1) + "-1)");
         return resultado;
-    }
+    }*/
 }
