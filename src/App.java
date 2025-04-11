@@ -8,8 +8,11 @@ public class App {
         // 2
         System.out.println(eR.getPotencia(5, 3));
         // 3
-        System.out.println(eR.Sumatoria2(125));
-
+        System.out.println(eR.Sumatoria(125));
+        // 4
+        System.out.println(eR.Descendente(5));
+        // 5
+        eR.Reverso(1234);
     }
 
 }

@@ -40,10 +40,35 @@ public class EjerciciosRecursivos {
      * sumaDigitos con el resto y se suma el último digito.
      */
 
-    public int Sumatoria2(int n) {
+    public int Sumatoria(int n) {
         if (n <= 10) {
             return n;
         }
-        return (n % 10) + Sumatoria2(n / 10);
+        return (n % 10) + Sumatoria(n / 10);
     }
+
+    /*
+     * Escribe un método recunsivo que imprima los números desde n hasta 1
+     * de forma descendente, separados por espacios
+     */
+    public int Descendente(int n) {
+        if (n == 1)
+            return n;
+        System.out.print(n + " ");
+        return Descendente(n - 1);
+    }
+
+    /*
+     * Crea una función recursiva llamada reverso que recibo un número
+     * entero positvo n y dewuelva su numero invertido,
+     * Por ajemplo, si se recibe 1234. la funcion debe devalver 4321
+     */
+    public int Reverso(int n) {
+        if (n <= 0) {
+            return n;
+        }
+        System.out.print(n % 10);
+        return Reverso(n / 10);
+    }
+
 }
